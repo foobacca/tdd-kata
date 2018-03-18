@@ -34,3 +34,11 @@ def test_calculator_with_three_numbers_one_comma_one_newline_check_returns_sum()
 def test_calculator_with_negative_numbers_check_raises_error():
     with pytest.raises(Exception):
         calculator('-2')
+
+
+def test_calculator_with_three_numbers_one_equals_1000_check_large_number_ignored():
+    assert calculator('53,1000,5') == 1058
+
+
+def test_calculator_with_three_numbers_one_gt_1000_check_large_number_ignored():
+    assert calculator('53,5555,5') == 58

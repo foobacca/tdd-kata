@@ -5,6 +5,8 @@ def to_int(calc_part):
         int_part = int(calc_part)
         if int_part < 0:
             raise Exception('we do not deal with negative numbers')
+        if int_part > 1000:
+            int_part = 0
         return int_part
 
 
