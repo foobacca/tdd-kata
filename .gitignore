@@ -2,3 +2,4 @@
 *.pyo
 __pycache__
 .pytest_cache
+NERD_tree_1
